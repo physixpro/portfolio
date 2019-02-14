@@ -159,6 +159,22 @@ i.far.fa-envelope.fa-2x {
   cursor: pointer;
 }
 
+.box-2 {
+  text-align: center;
+}
+
+.github3 {
+  display: inline-block;
+}
+
+.github3:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .github1:hover {
   transform: scale(1.3);
   -webkit-transform: scale(1.3);

@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+ul {
+  margin-left: 60px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 100px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: arial;
+  color: greenyellow;
+  padding: 0 20px;
+  display: block;
+}
+
+ul li a:hover {
+  color: red;
+}
+
+/*javascript box*/
+.container {
+  max-width: 760px;
+  border: #fff solid 3px;
+  background: #fff;
+  top: 12em;
+  position: relative;
+  overflow: visible;
+}
+
+#main-img img,
+.imgs img {
+  width: 100%;
+}
+
+#main-img {
+  text-align: center;
+}
+
+#main-img img {
+  width: 50em;
+  position: relative;
+  top: 10em;
+  display: inline-block;
+}
+
+.imgs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  top: 10em;
+  position: relative;
+}
+
+.first-section {
+  height: 90vh;
+}
+
+.first-section img {
+  width: 100%;
+  height: 60vh;
+}
+
+/*Middle Section below banner*/
+.top-box-1 h1 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  font-style: unset;
+  position: relative;
+  bottom: 8em;
+}
+
+.top-box-1 h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  position: relative;
+  bottom: 14em;
+}
+
+/* "PRE-ORDER" GREEN BUTTON BELOW THE RELEASE DATE */
+.greenbutton {
+  position: relative;
+  background-color: green;
+  width: 6em;
+  height: 1.8em;
+  margin: auto;
+  bottom: 12em;
+}
+
+.greenbutton p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 0.7em;
+}
+
+.greenbutton a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  bottom: 11em;
+}
+
+/*top center line*/
+.middleline {
+  width: 50em;
+  height: 0.1em;
+  background-color: silver;
+  margin: auto;
+  top: 3em;
+  position: relative;
+}
+
+/*bottom center line*/
+.finalline {
+  width: 50em;
+  height: 0.1em;
+  background-color: silver;
+  margin: auto;
+  position: relative;
+  top: 7em;
+}
+
+/*fade in animation*/
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
+          animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+/*xbox icon*/
+i.fab.fa-xbox.fa-2x {
+  color: greenyellow;
+}
+
+/*line next to xbox icon*/
+.line {
+  width: 0.1em;
+  height: 2em;
+  background-color: white;
+  margin-top: 2.5em;
+}
+
+/*these are the 3 columns, 4k, hdr and xbox*/
+.details {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 30% 35%;
+      grid-template-columns: 35% 30% 35%;
+  margin: auto;
+  color: white;
+  top: 5em;
+  max-width: 40%;
+  font-family: "Roboto", sans-serif;
+}
+
+.details #firstbox {
+  color: none;
+  text-align: center;
+}
+
+.details #firstbox h2 {
+  font-size: 16px;
+}
+
+.details #HDR {
+  color: none;
+  text-align: center;
+}
+
+.details #xboxone {
+  color: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*play */
+.play {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.play a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 10em;
+}
+
+.play a:hover {
+  text-decoration: underline;
+}
+
+section.journey {
+  color: white;
+  background-color: black;
+  height: 30vh;
+  top: 8em;
+  position: relative;
+  text-align: center;
+}
+
+.journey h1 {
+  font-size: 60px;
+  font-family: "Lato", sans-serif;
+}
+
+.journey h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: lighter;
+}
+
+.journey h3 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+/*banners at the bottom*/
+.gamefeatures {
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.gamefeatures h1 {
+  display: inline-block;
+  padding-top: 8em;
+}
+
+.land1 {
+  text-align: center;
+}
+
+.land1 img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.land2 {
+  text-align: center;
+  position: relative;
+  bottom: 12em;
+}
+
+.land2 img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.wrap {
+  position: relative;
+  top: 10em;
+}
+
+#textbox {
+  width: 25em;
+  height: 15em;
+  background-color: white;
+  position: relative;
+  left: 19em;
+  top: 18em;
+  color: black;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+#textbox h1 {
+  margin-left: 1em;
+  padding-top: 1em;
+}
+
+#textbox p {
+  margin-left: 1em;
+  font-size: 20px;
+}
+
+#textbox2 {
+  width: 25em;
+  height: 15em;
+  background-color: white;
+  position: relative;
+  left: 19em;
+  top: 18em;
+  color: black;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+#textbox2 h1 {
+  margin-left: 1em;
+  padding-top: 1em;
+}
+
+#textbox2 p {
+  margin-left: 1em;
+  font-size: 20px;
+}
+
+/*section with game cd case*/
+section.end {
+  height: 50vh;
+  background-color: black;
+}
+
+section.end img {
+  display: block;
+  margin: 0 auto;
+  top: 15em;
+  position: relative;
+}
+
+/*last big paragraph below game cd case image*/
+section.paragraph {
+  height: 100vh;
+  background-color: white;
+  padding-left: 6em;
+  padding-top: 8em;
+  font-size: 23px;
+}
+
+section.paragraph h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
+
+section.paragraph p {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+/*Mature ESRB 5 divs*/
+section.finishingup {
+  height: 50vh;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  color: black;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-right: 30em;
+}
+
+.div-one img {
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.get-the-game {
+  height: 5vh;
+  background-color: white;
+  text-align: center;
+  font-size: 38px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: lighter;
+}
+
+/*last image section "get the game"*/
+section.buynow {
+  height: 80vh;
+  background-color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding-top: 5em;
+}
+
+.case img {
+  display: block;
+  margin: 0 auto;
+  padding-left: 10em;
+  position: relative;
+  bottom: 1em;
+}
+
+.sell h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.sell p {
+  font-size: 20px;
+}
+
+.sell button {
+  font-size: 20px;
+  background-color: green;
+}
+
+.sell a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  padding: 5px;
+}
+
+.sell a:hover {
+  text-decoration: underline;
+}
+
+/*credits*/
+section.credits {
+  height: 25vh;
+  background-color: #eeeded;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+  color: black;
+  font-size: 15px;
+  padding-left: 2em;
+  padding-top: 2em;
+  overflow: hidden;
+}
+/*# sourceMappingURL=main2.css.map */
